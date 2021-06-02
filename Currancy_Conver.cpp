@@ -1,3 +1,4 @@
+
 //Currancy Converter
 #include <iostream>
 float changer(float);
@@ -6,8 +7,10 @@ float ans;
 int ope;
 int main()
 {
+start:
     float inr;
-    cout << "\nEnter Amount In INR : ";
+    cout << "________________________________" << endl
+         << "\nEnter Amount In INR : ";
     cin >> inr;
 
     ans = changer(inr);
@@ -32,11 +35,11 @@ int main()
     {
         cout << "Your Amount in Peso : ";
     }
-    cout << "" << ans;
-    
+    cout << "" << ans << endl;
+    goto start;
 }
 float changer(float money)
-{   
+{
     cout << "\nChose In Which Currancy You Want To Conver your money";
     cout << "\n1.Doller\n2.Dirham\n3.Euro\n4.Pound\n5.Peso\n6.Exit\n=>";
     cin >> ope;
@@ -50,19 +53,19 @@ float changer(float money)
         switch (ope)
         {
         case 1:
-            ans = money * 73.29f;
+            ans = money * 0.014f;
             break;
         case 2:
-            ans = money * 19.95f;
+            ans = money * 0.050f;
             break;
         case 3:
-            ans = money * 87.04f;
+            ans = money * 0.011f;
             break;
         case 4:
-            ans = money * 101.48f;
+            ans = money * 0.0097f;
             break;
         case 5:
-            ans = money * 1.51f;
+            ans = money * 0.65f;
             break;
         case 6:
             exit(0);
