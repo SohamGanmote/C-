@@ -28,6 +28,7 @@ int player_turn()
     start:
         cout << "Player 1 (X) : ";
         cin >> cho;
+        system("CLS");
         for (int j = 0; j < 9; j++)
         {
             if (chake[j] == cho)
@@ -75,6 +76,7 @@ int player_turn()
     start2:
         cout << "Player 2 (O) : ";
         cin >> cho;
+        system("CLS");
         for (int j = 0; j < 9; j++)
         {
             if (chake[j] == cho)
@@ -161,7 +163,7 @@ int winner()
         cout << "X is The Winner ";
         exit(1);
     }
-    //////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     if (bord[0][0] == 'O' && bord[0][1] == 'O' && bord[0][2] == 'O')
     {
         cout << "O is The Winner ";
@@ -207,7 +209,7 @@ int winner()
 int main()
 {
 start:
-    int opction;
+    int opction, donotexit;
 
     cout << "\033[0;36m***************" << endl;
     cout << "TicTacToe Game" << endl;
@@ -279,7 +281,7 @@ start:
     cout << "2.No" << endl;
     cin >> opction;
     if (opction == 1)
-    {   
+    {
         system("CLS");
         goto start;
     }
@@ -287,5 +289,6 @@ start:
     {
         exit(1);
     }
+    cin >> donotexit;
     return 0;
 }
