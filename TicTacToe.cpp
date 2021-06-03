@@ -209,7 +209,7 @@ int winner()
 int main()
 {
 start:
-    int opction, donotexit;
+    int opction;
 
     cout << "\033[0;36m***************" << endl;
     cout << "TicTacToe Game" << endl;
@@ -276,19 +276,5 @@ start:
     cout << "************" << endl;
     cout << "Match Tie" << endl;
     cout << "************" << endl;
-    cout << "Do You Want To Play Again ? " << endl;
-    cout << "1.Yes" << endl;
-    cout << "2.No" << endl;
-    cin >> opction;
-    if (opction == 1)
-    {
-        system("CLS");
-        goto start;
-    }
-    else
-    {
-        exit(1);
-    }
-    cin >> donotexit;
     return 0;
 }
