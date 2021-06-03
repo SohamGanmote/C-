@@ -279,7 +279,8 @@ start:
     cout << "2.No" << endl;
     cin >> opction;
     if (opction == 1)
-    {
+    {   
+        system("CLS");
         goto start;
     }
     else
