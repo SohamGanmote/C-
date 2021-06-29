@@ -105,15 +105,15 @@ public:
         }
         if (product2 > 0)
         {
-            cout << "(2)Chipes        |              " << quan1 << "                |         Rs.5" << endl;
+            cout << "(2)Chipes        |              " << quan2 << "                |         Rs.5" << endl;
         }
         if (product3 > 0)
         {
-            cout << "(3)Gum           |              " << quan1 << "                |         Rs.1" << endl;
+            cout << "(3)Gum           |              " << quan3 << "                |         Rs.1" << endl;
         }
         if (product4 > 0)
         {
-            cout << "(4)Cookies       |              " << quan1 << "                |        Rs.10" << endl;
+            cout << "(4)Cookies       |              " << quan4 << "                |        Rs.10" << endl;
         }
         cout << "---------------------------------------------------------------------" << endl;
         cout << "                                                Total Price : Rs." << total_bill;
