@@ -29,7 +29,7 @@ public:
 
     int producttable()
     {
-        cout << "Product         Product Code     Product Code" << endl;
+        cout << "Product         Product Code     Product Price" << endl;
         cout << "*********       ************     *************" << endl;
         cout << "Candies              101              Rs.1" << endl;
         cout << "Chipe                102              Rs.5" << endl;
