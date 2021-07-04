@@ -1,4 +1,4 @@
-//TicTacToe Game Created By Soham (me) and Yasin (Friend)
+//TicTacToe Game By Soham (me) and Yasin (Friend)
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
