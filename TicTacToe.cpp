@@ -15,11 +15,13 @@ int winner();
 int display()
 {
     cout << endl;
+    cout << "\033[1;31m";
     cout << " " << bord[0][0] << " | " << bord[0][1] << " | " << bord[0][2] << endl;
     cout << "-----------" << endl;
     cout << " " << bord[1][0] << " | " << bord[1][1] << " | " << bord[1][2] << endl;
     cout << "-----------" << endl;
     cout << " " << bord[2][0] << " | " << bord[2][1] << " | " << bord[2][2] << endl;
+    cout << "\033[0m";
     return 0;
 }
 int player_turn()
